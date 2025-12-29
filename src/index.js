@@ -1,5 +1,6 @@
 import imgLogo from "./demex_color.png";
-export { imgLogo };
+import bgCurrency from "./bg-currency.avif";
+export { imgLogo, bgCurrency };
 
 const currencies = [
   {

@@ -20,18 +20,18 @@ const Navbar = () => {
         {/* Desktop menu */}
         <ul className="hidden md:flex items-center space-x-8 ">
           <li>
-            <a href="#" className="hover:text-violet-600">
+            <a href="/" className="hover:text-violet-600">
               Home
             </a>
           </li>
           <li>
             <a href="#" className="hover:text-violet-600">
-              Services
+              Swap
             </a>
           </li>
           <li>
             <a href="#" className="hover:text-violet-600">
-              Portfolio
+              GitHub
             </a>
           </li>
           <li>
