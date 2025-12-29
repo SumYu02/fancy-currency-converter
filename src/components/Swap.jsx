@@ -89,7 +89,7 @@ const Swap = () => {
   const toCurrencyData = currencies.find((c) => c.currency === toCurrency);
 
   return (
-    <div id="swap" className=" relative z-10 text-white border border-white/10 rounded-lg p-6 sm:p-12 bg-zinc-900 w-3/4 md:w-1/2">
+    <div  className=" relative z-10 text-white border border-white/10 rounded-lg p-6 sm:p-12 bg-zinc-900 w-3/4 md:w-1/2">
       <h1 className="text-2xl sm:text-3xl font-bold text-white mb-5 flex justify-center items-center">Swap</h1>
       <form
         onSubmit={handleSubmit}

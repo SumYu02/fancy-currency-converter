@@ -14,7 +14,7 @@ const Home = () => {
       <Hero />
       <Testimonial />
 
-      <div className=" relative flex flex-col justify-center items-center mt-8 mb-8 min-h-64 md:min-h-screen">
+      <div id="swap" className=" relative flex flex-col justify-center items-center mt-8 mb-8 min-h-64 md:min-h-screen">
         <div className="z-10 gap-3 flex flex-col items-center justify-center mb-10 w-3/4 md:w-1/2">
           <h2 className="text-3xl md:text-5xl font-semibold text-center text-white">
             Convert currencies instantly
@@ -30,7 +30,7 @@ const Home = () => {
 
         <Swap /> 
       </div>
-      <CurrencyTable />
+      <CurrencyTable id="currency-table"  />
       <AboutMe />
       <Footer />
     </div>

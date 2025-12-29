@@ -2,7 +2,7 @@ import React from 'react'
 import { currencies } from '../index'
 import { MdUpdate } from "react-icons/md";
 
-const CurrencyTable = () => {
+const CurrencyTable = ({ id }) => {
     const uniqueCurrencies = currencies.reduce((acc, curr) => {
         if (!acc.find(item => item.currency === curr.currency)) {
           acc.push(curr);
@@ -11,7 +11,7 @@ const CurrencyTable = () => {
       }, []);
 
   return (
-    <div id="currency-table" className="w-full max-w-5x rounded-3xl px-6 py-20 md:px-16 mx-auto flex justify-center items-center relative overflow-hidden">
+    <div id={id} className="w-full max-w-5x rounded-3xl px-6 py-20 md:px-16 mx-auto flex justify-center items-center relative overflow-hidden">
       <div className="w-full max-w-7xl flex flex-col items-center justify-center border border-white/30 rounded-3xl p-10 gap-4 backdrop-blur-sm">
         <h2 className="text-3xl md:text-5xl font-semibold text-center text-white">
           Currency Table
