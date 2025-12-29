@@ -31,6 +31,7 @@ import logoWstEth from "./tokens/wstETH.svg";
 import logoYieldUsd from "./tokens/YieldUSD.svg";
 import logoZil from "./tokens/ZIL.svg";
 import logoAxlUsdc from "./tokens/axlUSDC.svg";
+import logoOkt from "./tokens/OKT.svg";
 export { imgLogo, bgCurrency };
 
 export const currencies = [
@@ -56,7 +57,7 @@ export const currencies = [
     currency: "BUSD",
     date: "2023-08-29T07:10:40.000Z",
     price: 0.999878261118644,
-    logo: logoUsdc,
+    logo: logoBusd,
   },
   {
     currency: "USD",
@@ -194,6 +195,7 @@ export const currencies = [
     currency: "OKT",
     date: "2023-08-29T07:10:40.000Z",
     price: 13.5615779661017,
+    logo: logoOkt,
   },
   {
     currency: "SWTH",

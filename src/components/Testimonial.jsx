@@ -91,7 +91,7 @@ const Testimonial = () => {
   
   
   return (
-    <div className=" mt-10 rounded-lg mx-4 shadow hover:shadow-lg transition-all duration-200 flex flex-col max-w-screen shrink-0">
+    <div className=" rounded-lg mx-4 shadow hover:shadow-lg transition-all duration-200 flex flex-col max-w-screen shrink-0">
        <>
       <style>{`
         @keyframes marqueeScroll {
@@ -109,7 +109,7 @@ const Testimonial = () => {
       `}</style>
 
       {/* Row 1 */}
-      <div className="marquee-row overflow-hidden relative">
+      <div className="marquee-row overflow-hidden relative  mt-10 sm:mt-20">
         <div className="marquee-inner flex transform-gpu min-w-[200%] pt-10 pb-5">
           {[...currencyCards, ...currencyCards].map((card, index) => (
             <CurrencyCard key={index} card={card} />

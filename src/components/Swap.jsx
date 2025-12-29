@@ -3,12 +3,15 @@ import { useState, useEffect } from "react";
 import { currencies } from "../index";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import CurrencySelect from "../functions/CurrencySelect";
+import Modal from "./Modal";
 
 const Swap = () => {
   const [fromCurrency, setFromCurrency] = useState("");
   const [toCurrency, setToCurrency] = useState("");
   const [fromAmount, setFromAmount] = useState("");
   const [toAmount, setToAmount] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [swapResult, setSwapResult] = useState(null);
 
   // Calculate swap amount when fromAmount, fromCurrency, or toCurrency changes
   useEffect(() => {
@@ -64,7 +67,7 @@ const Swap = () => {
     }
 
     // Perform swap
-    const swapResult = {
+    const result = {
       from: {
         currency: fromCurrency,
         amount: parseFloat(fromAmount),
@@ -78,20 +81,16 @@ const Swap = () => {
       exchangeRate: toCurrencyData.price / fromCurrencyData.price,
     };
 
-  
-    alert(
-      `Swap successful!\n${fromAmount} ${fromCurrency} → ${toAmount} ${toCurrency}\nExchange Rate: 1 ${fromCurrency} = ${swapResult.exchangeRate.toFixed(
-        6
-      )} ${toCurrency}`
-    );
+    setSwapResult(result);
+    setIsOpen(true);
   };
 
   const fromCurrencyData = currencies.find((c) => c.currency === fromCurrency);
   const toCurrencyData = currencies.find((c) => c.currency === toCurrency);
 
   return (
-    <div className="relative z-10 text-white border border-white/10 rounded-lg p-4 bg-zinc-900 w-3/4 md:w-1/2">
-      <h1 className="text-2xl font-bold text-white mb-3">Swap</h1>
+    <div id="swap" className=" relative z-10 text-white border border-white/10 rounded-lg p-6 sm:p-12 bg-zinc-900 w-3/4 md:w-1/2">
+      <h1 className="text-2xl sm:text-3xl font-bold text-white mb-5 flex justify-center items-center">Swap</h1>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col items-center justify-center gap-6 w-full max-w-sm mx-auto"
@@ -207,6 +206,7 @@ const Swap = () => {
           Swap
         </button>
       </form>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} swapResult={swapResult} />
     </div>
   );
 };

@@ -25,17 +25,17 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-violet-600">
+            <a href="#swap" className="hover:text-violet-600">
               Swap
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-violet-600">
+            <a href="#github" className="hover:text-violet-600">
               GitHub
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-violet-600">
+            <a href="#currency-table" className="hover:text-violet-600">
               Pricing
             </a>
           </li>
@@ -49,8 +49,7 @@ const Navbar = () => {
           onClick={() => setOpen(!open)}
           className="inline-block bg-black text-white md:hidden active:scale-90 transition"
         >
-          
-          <IoMdMenu className="w-8 h-8"/>
+          <IoMdMenu className="w-8 h-8" />
         </button>
 
         {/* Mobile menu */}
@@ -63,17 +62,17 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm">
-                  Services
+                <a href="#swap" className="text-sm">
+                  Swap
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm">
-                  Portfolio
+                <a href="#github" className="text-sm">
+                  GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm">
+                <a href="#currency-table" className="text-sm">
                   Pricing
                 </a>
               </li>
