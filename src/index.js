@@ -1,3 +1,6 @@
+import imgLogo from "./demex_color.png";
+export { imgLogo };
+
 const currencies = [
   {
     currency: "BLUR",
