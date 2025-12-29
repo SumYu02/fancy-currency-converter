@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Hero = () => {
   return (
-    <section className="w-full sm:min-h-screen relative flex flex-col items-center bg-black text-white text-sm pb-16 bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-gradient-4.svg)] bg-center bg-cover bg-no-repeat">
+    <section className="w-fullrelative flex flex-col items-center bg-black text-white text-sm pb-16 bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-gradient-4.svg)] bg-center bg-cover bg-no-repeat">
       {/* HERO TEXT */}
       <h1 className="text-4xl md:text-6xl text-center font-semibold max-w-3xl mt-36 bg-gradient-to-r from-white to-[#748298] text-transparent bg-clip-text">
         Convert Currencies Instantly with Fancy

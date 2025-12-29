@@ -10,7 +10,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Testimonial />
-      <div className="relative flex justify-center items-center mt-8 mb-8  min-h-screen">
+      <div className="relative flex justify-center items-center mt-8 mb-8 min-h-64">
         <div className="absolute inset-0 bg-black/60"></div>
         {/* Soft purple glow (NOT full opacity) */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-600/20 to-transparent"></div>

@@ -91,7 +91,7 @@ const Testimonial = () => {
   
   
   return (
-    <div className="rounded-lg mx-4 shadow hover:shadow-lg transition-all duration-200 flex flex-col max-w-screen shrink-0">
+    <div className=" mt-10 rounded-lg mx-4 shadow hover:shadow-lg transition-all duration-200 flex flex-col max-w-screen shrink-0">
        <>
       <style>{`
         @keyframes marqueeScroll {
