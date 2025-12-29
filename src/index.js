@@ -30,6 +30,8 @@ import logoWbtc from "./tokens/WBTC.svg";
 import logoWstEth from "./tokens/wstETH.svg";
 import logoYieldUsd from "./tokens/YieldUSD.svg";
 import logoZil from "./tokens/ZIL.svg";
+import logoAxlUsdc from "./tokens/axlUSDC.svg";
+export { imgLogo, bgCurrency };
 
 export const currencies = [
   {
