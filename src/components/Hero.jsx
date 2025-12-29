@@ -40,7 +40,7 @@ const Hero = () => {
                 }
             `}</style>
         <div className="rainbow relative z-0 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100">
-          <button className="px-8 text-sm py-3 text-white rounded-full font-medium bg-gray-800">
+          <button className="px-10 text-sm py-4 text-white rounded-full font-medium bg-gray-800">
             Get Started →
           </button>
         </div>
