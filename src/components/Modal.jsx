@@ -22,11 +22,10 @@ const Modal = ({ isOpen, onClose, swapResult }) => {
   }, [isOpen, onClose]);
 
   if (!isOpen || !swapResult) return null;
-  
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-      <div 
+      <div
         ref={modalRef}
         className="flex flex-col items-center bg-white shadow-md  rounded-xl py-6 px-5 md:w-[460px] w-[370px] border border-gray-200 relative"
       >
@@ -35,24 +34,20 @@ const Modal = ({ isOpen, onClose, swapResult }) => {
           className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-xl"
           aria-label="Close"
         >
-              <IoCloseOutline className="w-6 h-6" />
-
+          <IoCloseOutline className="w-6 h-6" />
         </button>
         <h2 className="font-semibold mt-4 text-xl text-green-600 mb-3">
           Swap Successful!
         </h2>
-        <p className="text-gray-600 mt-2 text-sm">
-          Your transaction has been completed successfully.
+        <p className="text-gray-600 text-sm">
+          Your currency conversion has been completed successfully.
         </p>
-        <div className="flex flex-col items-center mt-4">
+        <div className="flex flex-col items-center mt-4 gap-2">
           <p className="text-gray-600 text-sm">
             From: {swapResult.from.amount} {swapResult.from.currency}
           </p>
           <p className="text-gray-600 text-sm">
             To: {swapResult.to.amount} {swapResult.to.currency}
-          </p>
-          <p className="text-gray-600 text-sm mt-2">
-            Exchange Rate: 1 {swapResult.from.currency} = {swapResult.exchangeRate.toFixed(6)} {swapResult.to.currency}
           </p>
         </div>
       </div>

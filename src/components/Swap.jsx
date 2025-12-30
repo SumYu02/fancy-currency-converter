@@ -78,7 +78,6 @@ const Swap = () => {
         amount: parseFloat(toAmount),
         price: toCurrencyData.price,
       },
-      exchangeRate: toCurrencyData.price / fromCurrencyData.price,
     };
 
     setSwapResult(result);
