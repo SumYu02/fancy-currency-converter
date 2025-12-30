@@ -89,8 +89,10 @@ const Swap = () => {
   const toCurrencyData = currencies.find((c) => c.currency === toCurrency);
 
   return (
-    <div  className=" relative z-10 text-white border border-white/10 rounded-lg p-6 sm:p-12 bg-zinc-900 w-3/4 md:w-1/2">
-      <h1 className="text-2xl sm:text-3xl font-bold text-white mb-5 flex justify-center items-center">Swap</h1>
+    <div className=" relative z-10 text-white border border-white/10 rounded-lg p-6 sm:p-12 bg-zinc-900 w-3/4 md:w-1/2">
+      <h1 className="text-2xl sm:text-3xl font-bold text-white mb-5 flex justify-center items-center">
+        Swap
+      </h1>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col items-center justify-center gap-6 w-full max-w-sm mx-auto"
@@ -189,12 +191,20 @@ const Swap = () => {
 
         {/* Exchange Rate Info */}
         {fromCurrency && toCurrency && fromCurrencyData && toCurrencyData && (
-          <div className="w-full text-center text-sm text-white/70">
+          <div className="w-full text-center text-sm text-white/70 gap-2 flex flex-col items-center justify-center">
             <p>
-              1 {fromCurrency} ={" "}
-              {(toCurrencyData.price / fromCurrencyData.price).toFixed(6)}{" "}
-              {toCurrency}
+              {fromAmount} {fromCurrency} = {toAmount} {toCurrency}
             </p>
+            <span className="text-xs text-white/50">
+              Updated at{" "}
+              {new Date().toLocaleDateString("en-GB", {
+                day: "2-digit",
+                month: "short",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
+            </span>
           </div>
         )}
 
@@ -206,7 +216,11 @@ const Swap = () => {
           Swap
         </button>
       </form>
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} swapResult={swapResult} />
+      <Modal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        swapResult={swapResult}
+      />
     </div>
   );
 };
