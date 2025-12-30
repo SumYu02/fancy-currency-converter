@@ -8,7 +8,7 @@ import logoEth from "./ETH.svg";
 import logoGmx from "./GMX.svg";
 import logoStem from "./EVMOS.svg";
 import logoLuna from "./LUNA.svg";
-import logoRatom from "./RATOM.svg";
+import logoRatom from "./rATOM.svg";
 import logoStrd from "./STRD.svg";
 import logoEvmos from "./EVMOS.svg";
 export {
