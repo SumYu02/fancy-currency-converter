@@ -19,7 +19,8 @@ const AboutMe = () => {
           project on GitHub.
         </p>
 
-        <FaGithub className="w-28 h-28 text-white mt-8 cursor-pointer hover:scale-110 transition-transform" />
+        <FaGithub className="w-28 h-28 text-white mt-8 cursor-pointer hover:scale-110 transition-transform" 
+        onClick={() => window.open("https://github.com/SumYu02/fancy-currency-converter", "_blank")} />
       </div>
     </div>
   );
