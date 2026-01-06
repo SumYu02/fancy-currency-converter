@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="w-fullrelative flex flex-col items-center bg-black text-white text-sm pb-16 bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-gradient-4.svg)] bg-center ">
       {/* HERO TEXT */}
       <h1 className="text-4xl md:text-6xl text-center font-semibold max-w-3xl mt-36 bg-gradient-to-r from-white to-[#748298] text-transparent bg-clip-text">
-        Convert Currencies Instantly with Fancy
+        Swap Tokens Instantly with Fancy
       </h1>
 
       <p className="text-slate-300 md:text-base text-center max-w-md mt-3 px-2 ">
@@ -40,7 +40,10 @@ const Hero = () => {
                 }
             `}</style>
         <div className="rainbow relative z-0 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100">
-          <button onClick={() => window.location.href = "#swap"} className="px-10 text-sm py-4 text-white rounded-full font-medium bg-gray-800">
+          <button
+            onClick={() => (window.location.href = "#swap")}
+            className="px-10 text-sm py-4 text-white rounded-full font-medium bg-gray-800"
+          >
             Get Started →
           </button>
         </div>
